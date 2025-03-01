@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "295261572139",
+    "project_id": "homecare-f3078",
+    "storage_bucket": "homecare-f3078.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295261572139:android:135a69ee4121f1787aae6e",
+        "android_client_info": {
+          "package_name": "com.example.homecare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295261572139-4i15j3vte26e8n5kkei3p8lu4jotvaoc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.homecare",
+            "certificate_hash": "fba040c8f9757a7e2fcd3bd150e68bac69192dcc"
+          }
+        },
+        {
+          "client_id": "295261572139-1oj4be89f4981i96p471p8o9kvider3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd3aQZlZd00VR3Q6OJ_q9T2VrhYUQmb4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295261572139-1oj4be89f4981i96p471p8o9kvider3u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "295261572139-sg7dhaurbikn310tc0b7map8ca0on4fr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.homecare"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
