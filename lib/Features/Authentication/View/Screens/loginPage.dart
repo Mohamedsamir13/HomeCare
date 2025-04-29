@@ -8,6 +8,7 @@ import 'package:homecare/Const/images.dart';
 import 'package:homecare/Const/size.dart';
 import 'package:homecare/Features/Authentication/Controller/authController.dart';
 import 'package:homecare/Features/Authentication/View/Component/authTextField.dart';
+import 'package:homecare/Features/Authentication/View/Screens/forgetPassword.dart';
 import 'package:homecare/Features/Authentication/View/Screens/registerPage.dart';
 import 'package:homecare/Features/Home/View/Screens/homePage.dart';
 
@@ -124,7 +125,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     TextButton(
                       onPressed: () {
-                        // TODO: Implement Forgot Password functionality
+                     Get.to(ForgetPasswordScreen()) ;  // TODO: Implement Forgot Password functionality
                       },
                       child: AppText(
                         color: Colors.white,

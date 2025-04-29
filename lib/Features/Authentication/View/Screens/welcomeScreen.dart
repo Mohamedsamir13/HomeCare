@@ -52,7 +52,7 @@ class _WelcomescreenState extends State<Welcomescreen> {
                       text: 'SIGN UP',
                       onPressed: () => Get.to(SignUpScreen()),
                     ),
-                    SizedBox(height: displayHeight(context) * 0.03),
+                    SizedBox(height: displayHeight(context)   * 0.03),
                     CustomButton(
                       text: 'LOG IN',
                       onPressed: () => Get.to(LoginPage()),

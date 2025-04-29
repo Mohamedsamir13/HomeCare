@@ -4,6 +4,7 @@ class Appointment {
   final String time;
   final String status;
   final DateTime createdAt;
+  final String? doctorName; // ✅ أضفنا اسم الطبيب كـ optional
 
   Appointment({
     required this.userId,
@@ -11,6 +12,7 @@ class Appointment {
     required this.time,
     required this.status,
     required this.createdAt,
+    this.doctorName, // ✅ أضفناها هنا
   });
 
   Map<String, dynamic> toJson() => {
@@ -19,5 +21,6 @@ class Appointment {
     'time': time,
     'status': status,
     'createdAt': createdAt,
+    if (doctorName != null) 'doctorName': doctorName, // ✅ فقط إذا موجود
   };
 }

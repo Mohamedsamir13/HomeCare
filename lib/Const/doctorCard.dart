@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:homecare/Const/appColor.dart';
 import 'package:homecare/Const/appText.dart';
 import 'package:homecare/Const/size.dart';
 import 'package:homecare/Features/Admin/Model/doctor.dart';
+import 'package:homecare/Features/Booking/Controller/bookingController.dart';
+import 'package:homecare/Features/Booking/View/bookingScreen.dart';
 
 class DoctorCard extends StatelessWidget {
   final Doctor doctor;
@@ -98,7 +102,11 @@ class DoctorCard extends StatelessWidget {
                       SizedBox(width: width * 0.04),
                       ElevatedButton(
                         onPressed: () {
-                          // Add booking logic
+                          final doctorName = doctor.name; // Just the name of the doctor
+
+                          final drAppoinmentsController = Get.put(AppointmentController());
+                          drAppoinmentsController.selectDoctor(doctor);
+                          Get.to(() => AppointmentView()); // Pass only the doctor name
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: AppColors.primaryColor,

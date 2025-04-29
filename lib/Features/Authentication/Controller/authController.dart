@@ -17,6 +17,18 @@ class AuthController extends GetxController {
     super.onInit();
     firebaseUser.bindStream(_auth.authStateChanges());
   }
+  Future<bool> resetPassword(String email) async {
+    try {
+      isLoading.value = true;
+      await _auth.sendPasswordResetEmail(email: email);
+      isLoading.value = false;
+      return true;
+    } catch (e) {
+      isLoading.value = false;
+      print('Failed to reset password: $e');
+      return false;
+    }
+  }
 
   // Sign Up
   Future<User?> signUpWithEmailAndPassword(

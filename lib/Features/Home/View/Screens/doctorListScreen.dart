@@ -25,7 +25,7 @@ class DoctorsList extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 20), // 🔹 Spacing from the top
+              SizedBox(height: displayHeight(context)*0.05), // Move down by 10% of the screen height
 
               IconButton(
                 icon: Icon(
